@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ingrid te amo</title>
+	<style>
+		body {
+			background-color: #FFC0CB;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		header {
+			background-color: #FF69B4;
+			color: #FFF;
+			padding: 20px;
+			text-align: center;
+		}
+
+		h1 {
+			font-size: 48px;
+			margin-top: 0;
+		}
+
+		.container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+
+		.heart {
+			background-color: #FF69B4;
+			height: 100px;
+			width: 100px;
+			margin: 0 10px;
+			transform: rotate(45deg);
+		}
+
+		.heart:before,
+		.heart:after {
+			content: "";
+			background-color: #FF69B4;
+			border-radius: 50% 50% 0 0;
+			height: 100px;
+			position: absolute;
+			width: 100px;
+		}
+
+		.heart:before {
+			top: -50px;
+			left: 0;
+		}
+
+		.heart:after {
+			top: 0;
+			left: 50px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Ingrid te amo</h1>
+	</header>
+
+	<div class="container">
+		<div class="heart"></div>
+		<div class="heart"></div>
+		<div class="heart"></div>
+	</div>
+</body>
+</html>
